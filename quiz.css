@@ -1,0 +1,152 @@
+
+*{
+	margin: 20px;
+}
+
+/* content */
+
+body{
+background-color: darkgray;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: wheat;
+    font-size: 45px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: lavenderblush;
+    box-shadow: 0 1px 3px azure;
+}
+
+li:hover{
+    background-color: transparent;
+    opacity: 0.8;
+}
+
+input[type=radio]{
+    border: 0px;
+    width: 20px;
+    height: 2em;
+    cursor: pointer;
+}
+
+
+/* Quiz features */
+.quizBox {
+    width: 75%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 5px;
+		position: relative;
+		height: 100%;
+    border: 3px solid rgba(255, 255, 255, 1);
+    background-color: #000;
+    border-radius: 0px 10%;
+    box-shadow: 0px 0px 13px 2px rgb(0, 0, 0);
+}
+
+.nextButton{
+    border-radius: 6px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: chocolate;
+    color:#fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin: auto;
+		padding-top: 20px;
+		cursor: pointer;
+}
+.nextButton:hover{
+	opacity: 0.7;
+}
+
+.quiz{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    width: 90%;
+    height: 50px;
+		margin: auto;
+		padding: 25px;
+    border-radius: 5px;
+    background-color: honeydew;
+    text-align: center;
+    color: maroon;
+}
+
+.quizPopup{
+    background-color: lightblue;
+    border-radius: 6px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    color: midnightblue;
+}
+
+.choiceList {
+    font-family: 'Courier New', Courier, monospace;
+    color: plum;
+}
+
+.result {
+    width: 30%;
+    height: auto;
+    border-radius: 6px;
+    background-color: cadetblue;
+    margin: auto;
+    margin-bottom: 35px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* For mobile phones */
+@media screen and (max-width:550px){
+    h1{
+        font-size: 15px;
+    }
+
+    body{
+        align-items: center;
+    }
+
+    li{
+        font-size: 15px;
+        display: block;
+    }
+
+    input[type=radio]{
+        width: 20%;
+    }
+
+    .quiz{
+        font-size: 15px;
+        margin: auto;
+        width: 50%;
+        height: 50%;
+    }
+
+    .result {
+        width: 60%;
+        height: 40%;
+    }
+
+    .quizPopup{
+        width: 60%;
+        height: 40%;
+    }
+}
